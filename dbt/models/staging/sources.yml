@@ -1,0 +1,6 @@
+version: 2
+
+sources:
+  - name: campaign_dbt
+    tables:
+      - name: donations_raw

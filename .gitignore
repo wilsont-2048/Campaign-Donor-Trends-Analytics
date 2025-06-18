@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# DBT
+dbt_packages/
+target/
+logs/
+
+# Airflow
+~/airflow/
+
+# Data files
+data/indiv_header_file.csv
+data/itcont.txt

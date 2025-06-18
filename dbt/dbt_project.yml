@@ -1,0 +1,17 @@
+name: 'campaign_dbt_project'
+version: '1.0.0'
+config-version: 2
+
+profile: 'campaign_dbt_project'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["data"]
+macro-paths: ["macros"]
+target-path: "target"
+clean-targets: ["target", "dbt_modules"]
+
+models:
+  campaign_dbt_project:
+    +materialized: view

@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: stg_donations
+    description: "Staging model for individual contributions"
+    columns:
+      - name: donor_name
+        tests: [not_null]
+      - name: candidate_id
+        tests: [not_null]
+      - name: amount
+        tests: [not_null]
+      - name: donation_date
+        tests: [not_null]

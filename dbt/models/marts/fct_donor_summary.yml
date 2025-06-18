@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: fct_donor_summary
+    description: "Fact table summarizing total contributions per donor"
+    columns:
+      - name: donor_name
+        description: "Name of the donor"
+        tests: [not_null]
+      - name: total_contributed
+        description: "Total amount donated by this person"
+        tests: [not_null]
+      - name: donation_count
+        description: "Number of contributions"
+      - name: last_donation_date
+        description: "Most recent donation date from this donor"
